@@ -1,0 +1,19 @@
+<templateSet group="Nebular code snippets">
+    <template name="nb-sidebar" value="&lt;nb-sidebar&gt;$SidebarContent$&lt;/nb-sidebar&gt;"
+              description="NbSidebarComponent basic" toReformat="true" toShortenFQNames="true">
+        <variable name="SidebarCont ent" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML" value="true"/>
+        </context>
+    </template>
+    <template name="nb-layout"
+              value="&lt;nb-layout&gt;&#10;    &lt;nb-layout-header&gt;$header$&lt;/nb-layout-header&gt;&#10;    &lt;nb-layout-column&gt;$content$&lt;/nb-layout-column&gt;&#10;    &lt;nb-layout-footer&gt;$footer$&lt;/nb-layout-footer&gt;&#10;&lt;/nb-layout&gt;"
+              description="NbLayoutComponent basic" toReformat="true" toShortenFQNames="true">
+        <variable name="header" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="content" expression="" defaultValue="" alwaysStopAt="true"/>
+        <variable name="footer" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML" value="true"/>
+        </context>
+    </template>
+</templateSet>
