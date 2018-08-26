@@ -18,7 +18,7 @@ Compatible with:
  - Android Studio
 
 
-![Extension](https://raw.githubusercontent.com/shalinjames/vscode-nebular-snippets/master/images/nebular_snippets_html.gif)
+![Extension](https://raw.githubusercontent.com/shalinjames/intellij-nebular-snippets/master/resources/images/intellij_nebular_snippets_1.gif)
 
 [Intellij Nebular code snippets](https://plugins.jetbrains.com/plugin/11065-nebular-code-snippets) link for the extension
 
