@@ -16,16 +16,65 @@
             <option name="HTML" value="true"/>
         </context>
     </template>
-    <template name="nb-menu" value="&lt;nb-menu [items]=&quot;$items$&quot;&gt;&lt;/nb-menu&gt;" description="NbMenuComponent basic" toReformat="true" toShortenFQNames="true">
-        <variable name="items" expression="" defaultValue="" alwaysStopAt="true" />
+    <template name="nb-menu" value="&lt;nb-menu [items]=&quot;$items$&quot;&gt;&lt;/nb-menu&gt;"
+              description="NbMenuComponent basic" toReformat="true" toShortenFQNames="true">
+        <variable name="items" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="HTML_TEXT" value="true" />
+            <option name="HTML_TEXT" value="true"/>
         </context>
     </template>
-    <template name="nb-card" value="&lt;nb-card&gt;&#10;    &lt;nb-card-body&gt;&#10;        $Card$&#10;    &lt;/nb-card-body&gt;&#10;&lt;/nb-card&gt;" description="NbCardComponent basic" toReformat="true" toShortenFQNames="true">
-        <variable name="Card" expression="" defaultValue="" alwaysStopAt="true" />
+    <template name="nb-card"
+              value="&lt;nb-card&gt;&#10;    &lt;nb-card-body&gt;&#10;        $Card$&#10;    &lt;/nb-card-body&gt;&#10;&lt;/nb-card&gt;"
+              description="NbCardComponent basic" toReformat="true" toShortenFQNames="true">
+        <variable name="Card" expression="" defaultValue="" alwaysStopAt="true"/>
         <context>
-            <option name="HTML_TEXT" value="true" />
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-flip-card"
+              value="&lt;nb-flip-card&gt;&#10;    &lt;nb-card-front&gt;&#10;        &lt;nb-card&gt;&#10;            &lt;nb-card-body&gt;&#10;                $Front_card_text$&#10;            &lt;/nb-card-body&gt;&#10;        &lt;/nb-card&gt;&#10;    &lt;/nb-card-front&gt;&#10;    &lt;nb-card-back&gt;&#10;        &lt;nb-card&gt;&#10;            &lt;nb-card-body&gt;&#10;                $Back_card_text$&#10;            &lt;/nb-card-body&gt;&#10;        &lt;/nb-card&gt;&#10;    &lt;/nb-card-back&gt;&#10;&lt;/nb-flip-card&gt;"
+              description="NbFlipCardComponent basic with front and back cards" toReformat="true"
+              toShortenFQNames="true">
+        <variable name="Front_card_text" expression="spaceSeparated(&quot;Front-card-text&quot;)" defaultValue=""
+                  alwaysStopAt="true"/>
+        <variable name="Back_card_text" expression="spaceSeparated(&quot;Back-card-text&quot;)"
+                  defaultValue="Back card text" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-reveal-card"
+              value="&lt;nb-reveal-card&gt;&#10;    &lt;nb-card-front&gt;&#10;        &lt;nb-card&gt;&#10;            &lt;nb-card-body&gt;&#10;                $Front_card_text$&#10;            &lt;/nb-card-body&gt;&#10;        &lt;/nb-card&gt;&#10;    &lt;/nb-card-front&gt;&#10;    &lt;nb-card-back&gt;&#10;        &lt;nb-card&gt;&#10;            &lt;nb-card-body&gt;&#10;                $Back_card_text$&#10;            &lt;/nb-card-body&gt;&#10;        &lt;/nb-card&gt;&#10;    &lt;/nb-card-back&gt;&#10;&lt;/nb-reveal-card&gt;"
+              description="NbRevealCardComponent basic with front and back cards" toReformat="true"
+              toShortenFQNames="true">
+        <variable name="Front_card_text" expression="spaceSeparated(&quot;Front-card-text&quot;)" defaultValue=""
+                  alwaysStopAt="true"/>
+        <variable name="Back_card_text" expression="spaceSeparated(&quot;Back-card-text&quot;)"
+                  defaultValue="Back card text" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-alert"
+              value="&lt;nb-alert status=&quot;$primary$&quot; closable (close)=&quot;onClose()&quot;&gt;&#10;    $text$&#10;&lt;/nb-alert&gt;"
+              description="NbAlertComponent basic with status and closeable"
+              toReformat="true" toShortenFQNames="true">
+        <variable name="primary"
+                  expression="enum(&quot;primary&quot;,&quot;success&quot;,&quot;info&quot;,&quot;warning&quot;,&quot;danger&quot;)"
+                  defaultValue="&quot;primary&quot;" alwaysStopAt="true"/>
+        <variable name="text" expression="" defaultValue="&quot;Text&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-search" value="&lt;nb-search type=&quot;$type$&quot;&gt;&lt;/nb-search&gt;"
+              description="NbSearchComponent with animation types as options to select" toReformat="true"
+              toShortenFQNames="true">
+        <variable name="type"
+                  expression="enum(&quot;rotate-layout&quot;,&quot;modal-move&quot;,&quot;curtain&quot;,&quot;column-curtain&quot;,&quot;modal-drop&quot;,&quot;modal-half&quot;)"
+                  defaultValue="&quot;rotate-layout&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
         </context>
     </template>
 </templateSet>

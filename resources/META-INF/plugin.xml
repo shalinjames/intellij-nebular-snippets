@@ -1,43 +1,37 @@
 <idea-plugin>
-  <id>com.intellij.plugin.nebularsnippets</id>
-  <name>Nebular code snippets</name>
-  <version>0.0.2</version>
-  <vendor email="shalin.james@gmail.com" url="https://github.com/shalinjames">Shalin James</vendor>
+    <id>com.intellij.plugin.nebularsnippets</id>
+    <name>Nebular code snippets</name>
+    <version>0.0.3</version>
+    <vendor email="shalin.james@gmail.com" url="https://github.com/shalinjames">Shalin James</vendor>
 
-  <description><![CDATA[
+    <description><![CDATA[
       Nebular Snippets for IntelliJ products
     ]]></description>
 
-  <change-notes><![CDATA[
+    <change-notes><![CDATA[
        <section>
-            <h3>26/08/2018 - 0.0.2</h3>
+            <h3>26/08/2018 - 0.0.3</h3>
             <h4>Added Snippets for:</h4>
             <ul>
-                <li>nb-menu: NbSidebarComponent basic</li>
-                <li>nb-card: NbCardComponent basic</li>
-            </ul>
-            </section>
-       <section>
-            <h3>26/08/2018 - 0.0.1</h3>
-            <h4>Added Snippets for:</h4>
-            <ul>
-                <li>nb-sidebar: NbSidebarComponent basic</li>
-                <li>nb-layout: NbLayoutComponent basic</li>
+                <li>nb-search: NbSearchComponent with animation types as options to select</li>
+                <li>nb-alert: NbAlertComponent basic with status and closeable</li>
+                <li>nb-reveal-card: NbRevealCardComponent basic with front and back cards</li>
+                <li>nb-flip-card: NbFlipCardComponent basic with front and back cards</li>
             </ul>
             </section>
     ]]>
-  </change-notes>
+    </change-notes>
 
-  <idea-version since-build="145.0"/>
+    <idea-version since-build="145.0"/>
 
-  <depends>com.intellij.modules.lang</depends>
-  <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.platform</depends>
 
-  <extensions defaultExtensionNs="com.intellij">
-    <defaultLiveTemplatesProvider implementation="com.intellij.plugins.nebular.snippets.NebularSnippetsProvider"/>
-  </extensions>
+    <extensions defaultExtensionNs="com.intellij">
+        <defaultLiveTemplatesProvider implementation="com.intellij.plugins.nebular.snippets.NebularSnippetsProvider"/>
+    </extensions>
 
-  <actions>
-  </actions>
+    <actions>
+    </actions>
 
 </idea-plugin>
