@@ -16,4 +16,16 @@
             <option name="HTML" value="true"/>
         </context>
     </template>
+    <template name="nb-menu" value="&lt;nb-menu [items]=&quot;$items$&quot;&gt;&lt;/nb-menu&gt;" description="NbMenuComponent basic" toReformat="true" toShortenFQNames="true">
+        <variable name="items" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true" />
+        </context>
+    </template>
+    <template name="nb-card" value="&lt;nb-card&gt;&#10;    &lt;nb-card-body&gt;&#10;        $Card$&#10;    &lt;/nb-card-body&gt;&#10;&lt;/nb-card&gt;" description="NbCardComponent basic" toReformat="true" toShortenFQNames="true">
+        <variable name="Card" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="HTML_TEXT" value="true" />
+        </context>
+    </template>
 </templateSet>
