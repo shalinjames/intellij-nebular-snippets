@@ -10,10 +10,21 @@
 
     <change-notes><![CDATA[
        <section>
+       <h3>26/08/2018 - 0.0.4</h3>
+            <h4>Added Snippets for:</h4>
+            <ul>
+                <li>nb-tabs: NbTabsetComponent with two tabs</li>
+                <li>nb-stepper: NbStepperComponent with two steps</li>
+                <li>nb-actions: NbActionsComponent basic with one action</li>
+                <li>nb-action-badge: NbActionsComponent action with badge and icon</li>
+                <li>nb-user: NbUserComponent with size options</li>
+            </ul>
+       </section>
+       <section>
             <h3>26/08/2018 - 0.0.3</h3>
             <h4>Added Snippets for:</h4>
             <ul>
-                <li>nb-search: NbSearchComponent with animation types as options to select</li>
+                <li>nb-tabs: NbSearchComponent with animation types as options to select</li>
                 <li>nb-alert: NbAlertComponent basic with status and closeable</li>
                 <li>nb-reveal-card: NbRevealCardComponent basic with front and back cards</li>
                 <li>nb-flip-card: NbFlipCardComponent basic with front and back cards</li>

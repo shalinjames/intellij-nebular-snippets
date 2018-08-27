@@ -34,3 +34,9 @@ Compatible with:
 | nb-reveal-card     | NbRevealCardComponent basic with front and back cards       |
 | nb-alert           | NbAlertComponent basic with status and closeable            |
 | nb-search          | NbSearchComponent with animation types as options to select |
+| nb-tabs            | NbTabsetComponent with two tabs                             |
+| nb-stepper         | NbStepperComponent with two steps                           |
+| nb-actions         | NbActionsComponent basic with one action                    |
+| nb-action-icon     | NbActionsComponent action with icon                         |
+| nb-action-badge    | NbActionsComponent action with badge and icon               |
+| nb-user            | NbUserComponent with size options                           |

@@ -77,4 +77,68 @@
             <option name="HTML_TEXT" value="true"/>
         </context>
     </template>
+    <template name="nb-tabs"
+              value="&lt;nb-tabset&gt;&#10;    &lt;nb-tab tabTitle=&quot;$tab1$&quot;&gt;&#10;        $tab1content$&#10;    &lt;/nb-tab&gt;&#10;    &lt;nb-tab tabTitle=&quot;$tab2$&quot;&gt;&#10;        $tab2content$&#10;    &lt;/nb-tab&gt;&#10;&lt;/nb-tabset&gt;"
+              description="NbTabsetComponent with two tabs" toReformat="true" toShortenFQNames="true">
+        <variable name="tab1" expression="" defaultValue="&quot;Tab 1 Title&quot;" alwaysStopAt="true"/>
+        <variable name="tab1content" expression="" defaultValue="&quot;Tab 1 Content&quot;" alwaysStopAt="true"/>
+        <variable name="tab2" expression="" defaultValue="&quot;Tab 2 Title&quot;" alwaysStopAt="true"/>
+        <variable name="tab2content" expression="" defaultValue="&quot;Tab 2 Content&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-stepper"
+              value="&lt;nb-stepper orientation=&quot;$orientation$&quot;&gt;&#10;    &lt;nb-step label=&quot;$stepone$&quot;&gt;&#10;        $step1content$&#10;        &lt;nb-step&gt;&#10;            &lt;nb-step label=&quot;$steptwo$&quot;&gt;&#10;                $step2content$&#10;                &lt;nb-step&gt;&#10;&lt;/nb-stepper&gt;"
+              description="NbStepperComponent with two steps" toReformat="true" toShortenFQNames="true">
+        <variable name="orientation" expression="enum(&quot;horizontal&quot;,&quot;vertical&quot;)"
+                  defaultValue="&quot;horizontal&quot;" alwaysStopAt="true"/>
+        <variable name="stepone" expression="" defaultValue="&quot;Step One Label&quot;" alwaysStopAt="true"/>
+        <variable name="step1content" expression="" defaultValue="&quot;Step 1 Content&quot;" alwaysStopAt="true"/>
+        <variable name="steptwo" expression="" defaultValue="&quot;Step Two Label&quot;" alwaysStopAt="true"/>
+        <variable name="step2content" expression="" defaultValue="&quot;Step 2 Content&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-actions"
+              value="&lt;nb-actions size=&quot;$size$&quot;&gt;&#10;    &lt;nb-action icon=&quot;$icon$&quot;&gt;&lt;/nb-action&gt;&#10;&lt;/nb-actions&gt;"
+              toReformat="true" toShortenFQNames="true">
+        <variable name="size" expression="enum(&quot;small&quot;,&quot;medium&quot;,&quot;large&quot;)"
+                  defaultValue="&quot;medium&quot;" alwaysStopAt="true"/>
+        <variable name="icon" expression="" defaultValue="&quot;nb-search&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-action-icon" value="&lt;nb-action icon=&quot;$icon$&quot;&gt;&lt;/nb-action&gt;"
+              description="NbActionsComponent action with icon" toReformat="true" toShortenFQNames="true">
+        <variable name="icon" expression="" defaultValue="&quot;nb-search&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-action-badge"
+              value="&lt;nb-action icon=&quot;$icon$&quot;  badgeText=&quot;$count$&quot; badgeStatus=&quot;$status$&quot;&gt;&lt;/nb-action&gt;"
+              description="NbActionsComponent action with badge and icon" toReformat="true" toShortenFQNames="true">
+        <variable name="icon" expression="" defaultValue="&quot;nb-search&quot;" alwaysStopAt="true"/>
+        <variable name="count" expression="" defaultValue="&quot;count&quot;" alwaysStopAt="true"/>
+        <variable name="status"
+                  expression="enum(&quot;primary&quot;,&quot;success&quot;,&quot;info&quot;,&quot;warning&quot;,&quot;danger&quot;)"
+                  defaultValue="&quot;primary&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-user"
+              value="&lt;nb-user name=&quot;$name$&quot; size=&quot;$size$&quot; title=&quot;$title$&quot;&gt;&lt;/nb-user&gt;"
+              description="NbUserComponent with size options" toReformat="true" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="&quot;User Name&quot;" alwaysStopAt="true"/>
+        <variable name="size" expression="enum(&quot;small&quot;,&quot;medium&quot;,&quot;large&quot;)"
+                  defaultValue="&quot;medium&quot;" alwaysStopAt="true"/>
+        <variable name="title" expression="" defaultValue="&quot;Title&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
 </templateSet>
