@@ -40,3 +40,13 @@ Compatible with:
 | nb-action-icon     | NbActionsComponent action with icon                         |
 | nb-action-badge    | NbActionsComponent action with badge and icon               |
 | nb-user            | NbUserComponent with size options                           |
+| nb-checkbox        | NbCheckboxComponent with status options                     |
+| nb-button          | Plain button                                                |
+| nb-spinner         | NbSpinnerDirective spinner directive with status and size   |
+| nb-progress        | NbProgressBarComponent basic                                |
+| nb-progress-plus   | NbProgressBarComponent with status, size, displayValue      |
+| nb-badge           | NbBadgeComponent basic                                      |
+| nb-accordian       | NbAccordionComponentaccordian                               |
+| nb-accordian-item  | NbAccordionComponent accordian item                         |
+| nb-list            | NbListComponent basic list                                  |
+| nb-list-item       | NbListComponent basic list item                             |

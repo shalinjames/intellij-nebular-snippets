@@ -141,4 +141,96 @@
             <option name="HTML_TEXT" value="true"/>
         </context>
     </template>
+    <template name="nb-checkbox" value="&lt;nb-checkbox status=&quot;$status$&quot;&gt;$text$&lt;/nb-checkbox&gt;"
+              description="NbCheckboxComponent with status options" toReformat="true" toShortenFQNames="true">
+        <variable name="status"
+                  expression="enum(&quot;primary&quot;,&quot;success&quot;,&quot;info&quot;,&quot;warning&quot;,&quot;danger&quot;)"
+                  defaultValue="" alwaysStopAt="true"/>
+        <variable name="text" expression="" defaultValue="&quot;Text&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-button" value="&lt;button nbButton&gt;$text$&lt;/button&gt;" description="Plain button"
+              toReformat="true" toShortenFQNames="true">
+        <variable name="text" expression="" defaultValue="&quot;Button Text&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-spinner"
+              value="[nbSpinner]=&quot;true&quot; nbSpinnerStatus=&quot;$status$&quot;  nbSpinnerSize=&quot;$size$&quot;"
+              description="NbSpinnerDirective spinner directive with status and size" toReformat="true"
+              toShortenFQNames="true">
+        <variable name="status"
+                  expression="enum(&quot;primary&quot;,&quot;success&quot;,&quot;info&quot;,&quot;warning&quot;,&quot;danger&quot;)"
+                  defaultValue="&quot;primary&quot;" alwaysStopAt="true"/>
+        <variable name="size" expression="enum(&quot;small&quot;,&quot;medium&quot;,&quot;large&quot;)"
+                  defaultValue="&quot;medium&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-progress" value="&lt;nb-progress-bar [value]=&quot;$value$&quot;&gt;&lt;/nb-progress-bar&gt;"
+              description="NbProgressBarComponent basic" toReformat="true" toShortenFQNames="true">
+        <variable name="value"
+                  expression="enum(&quot;10&quot;,&quot;20&quot;,&quot;30&quot;,&quot;40&quot;,&quot;50&quot;,&quot;60&quot;,&quot;70&quot;,&quot;80&quot;,&quot;90&quot;)"
+                  defaultValue="&quot;40&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-progress-plus"
+              value="&lt;nb-progress-bar [value]=&quot;$value$&quot; status=&quot;$status$&quot; size=&quot;$size$&quot; [displayValue]=&quot;true&quot;&gt;&lt;/nb-progress-bar&gt;"
+              description="NbProgressBarComponent with status, size, displayValue" toReformat="true"
+              toShortenFQNames="true">
+        <variable name="value"
+                  expression="enum(&quot;10&quot;,&quot;20&quot;,&quot;30&quot;,&quot;40&quot;,&quot;50&quot;,&quot;60&quot;,&quot;70&quot;,&quot;80&quot;,&quot;90&quot;)"
+                  defaultValue="&quot;40&quot;" alwaysStopAt="true"/>
+        <variable name="status"
+                  expression="enum(&quot;primary&quot;,&quot;success&quot;,&quot;info&quot;,&quot;warning&quot;,&quot;danger&quot;)"
+                  defaultValue="&quot;primary&quot;" alwaysStopAt="true"/>
+        <variable name="size" expression="enum(&quot;xs&quot;,&quot;sm&quot;,&quot;lg&quot;,&quot;xlg&quot;)"
+                  defaultValue="&quot;sm&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-badge" value="&lt;nb-badge text=&quot;$badgeText$&quot;&gt;&lt;/nb-badge&gt;"
+              description="NbBadgeComponent basic" toReformat="true" toShortenFQNames="true">
+        <variable name="badgeText" expression="" defaultValue="&quot;Badge Text&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-accordion" value="&lt;nb-accordion&gt;&#10;    $accordion$&#10;&lt;/nb-accordion&gt;"
+              description="NbAccordionComponentaccordion" toReformat="true" toShortenFQNames="true">
+        <variable name="accordion" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-accordion-item"
+              value="&lt;nb-accordion-item&gt;&#10;    &lt;nb-accordion-item-header&gt;&#10;        $title$&#10;    &lt;/nb-accordion-item-header&gt;&#10;    &lt;nb-accordion-item-body&gt;&#10;        $content$&#10;    &lt;/nb-accordion-item-body&gt;&#10;&lt;/nb-accordion-item&gt;"
+              description="NbAccordionComponent accordion item" toReformat="true" toShortenFQNames="true">
+        <variable name="title" expression="" defaultValue="&quot;Title&quot;" alwaysStopAt="true"/>
+        <variable name="content" expression="" defaultValue="&quot;Content&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-list" value="&lt;nb-list&gt;&#10;    $content$&#10;&lt;/nb-list&gt;"
+              description="NbListComponent basic list" toReformat="true" toShortenFQNames="true">
+        <variable name="content" expression="" defaultValue="" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
+    <template name="nb-list-item" value="&lt;nb-list-item&gt;&#10;    $content$&#10;&lt;/nb-list-item&gt;"
+              description="NbListComponent basic list item" toReformat="true" toShortenFQNames="true">
+        <variable name="content" expression="" defaultValue="&quot;Content&quot;" alwaysStopAt="true"/>
+        <context>
+            <option name="HTML_TEXT" value="true"/>
+        </context>
+    </template>
 </templateSet>

@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.intellij.plugin.nebularsnippets</id>
     <name>Nebular code snippets</name>
-    <version>0.0.4</version>
+    <version>1.0.0</version>
     <vendor email="shalin.james@gmail.com" url="https://github.com/shalinjames">Shalin James</vendor>
 
     <description><![CDATA[
@@ -9,6 +9,24 @@
     ]]></description>
 
     <change-notes><![CDATA[
+       <section>
+       <h2> Major release of Version 1. Has basic snippets for most of the components</h3>
+       <h3>27/08/2018 - 1.0.0</h3>
+            <h4>Added Snippets for:</h4>
+            <ul>
+                <li>nb-checkbox : NbCheckboxComponent with status options</li>
+                <li> nb-button          : Plain button                                              </li>
+                <li> nb-spinner         : NbSpinnerDirective spinner directive with status and size </li>
+                <li> nb-progress        : NbProgressBarComponent basic                              </li>
+                <li> nb-progress-plus   : NbProgressBarComponent with status, size, displayValue    </li>
+                <li> nb-badge           : NbBadgeComponent basic                                    </li>
+                <li> nb-accordian       : NbAccordionComponentaccordian                             </li>
+                <li> nb-accordian-item  : NbAccordionComponent accordian item                       </li>
+                <li> nb-list            : NbListComponent basic list                                </li>
+                <li> nb-list-item       : NbListComponent basic list item                           </li>
+
+            </ul>
+       </section>
        <section>
        <h3>26/08/2018 - 0.0.4</h3>
             <h4>Added Snippets for:</h4>
